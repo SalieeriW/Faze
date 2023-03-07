@@ -1,0 +1,214 @@
+/*title*/
+.mm_title {
+    margin-top: 40px;
+    color: #fff;
+    font-size: 6em;
+    width: 100%;
+    text-align: justify;
+    font-weight: 100;
+    text-align: center;
+}
+/*pop_window*/
+h1 {
+    color: #3c096c;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: justify;
+    font-weight: 100;
+    text-align: center;
+}
+.pop_window {
+    padding: 60px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+    height: fit-content;
+    row-gap: 30px;
+}
+.input_container {
+    display: wrap;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+}
+.input_container label {
+    display: block;
+    font-size: x-large;
+}
+.input {
+    border: 3px #3c096c solid;
+    border-radius: 15px;
+    width: 80%;
+    height: 40px;
+    font-size: large;
+    text-align: center;
+}
+.btn {
+    width: 60%;
+    background-color: #3c096c;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    height: 40px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+    background-color: #240046;
+}
+.img {
+    max-width: 60%;
+    max-height: 60%;
+}
+/*game*/
+.game_container {
+    height: fit-content;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border: 5px #6930c3 solid;
+    border-radius: 25px;
+    position: relative;
+}
+.reset {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    background-color: #3c096c;
+    border-radius: 20px;
+    top: 0px;
+    left: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: pointer;
+}
+.restard {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    background-color: #3c096c;
+    border-radius: 20px;
+    top: 0px;
+    left: 130px;
+    text-align: center;
+    border: none;
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: pointer;
+    display: block;
+}
+
+.reset:hover,
+.reset:active,
+.restard:hover,
+.restard:active {
+    background-color: #240046;
+}
+.rounds_played {
+    position: absolute;
+    height: fit-content;
+    width: 100px;
+    color: #fff;
+    background-color: #3c096c;
+    border-radius: 20px;
+    top: 0px;
+    right: 20px;
+}
+#round_num {
+    font-size: 1.6em;
+}
+.screen {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #6930c3;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border-radius: 10px;
+}
+.screen_box {
+    height: 100px;
+    width: 100px;
+    background-color: #3c096c;
+    border-radius: 10px;
+    font-size: 4em;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.correct {
+    background-color: #55a630;
+    pointer-events: none;
+}
+.wrong {
+    background-color: #c52233;
+    pointer-events: none;
+}
+.wrong_pos {
+    background-color: #f4d35e;
+    pointer-events: none;
+}
+
+.log_container {
+    margin: 60px auto;
+    border-radius: 20px;
+    height: fit-content;
+    background-color: #3c096c;
+    width: 100%;
+    padding: 30px;
+}
+.answerpopback_container {
+    display: flex;
+    height: 20%;
+    background-color: #10002b;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+.pop_result {
+    padding: 60px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+    height: 400px;
+    row-gap: 30px;
+    z-index: 0;
+    color: #10002b;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3em;
+}
+.hide2 {
+    display: none;
+}
+.hide {
+    scale: 0;
+    transform: translateX(-500%);
+    transition: all 1s;
+    display: none !important;
+}

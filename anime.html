@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaze: Games and Anime</title>
+        <link rel="icon" type="image/png" href="./icon/favicon.png" />
+        <link rel="stylesheet" href="./style/mastermind.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="./style/anime.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+        <script defer src="./js/anime-blog.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="logo"><img id="logo" src="./src/logo.png" />Faze</a>
+            <div class="navbar_sections">
+                <a href="games.html"><span>Games</span></a>
+                <a href="anime.html"><span>Anime</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="index.html" id="home"><span>Home</span></a>
+            </div>
+        </div>
+        <div class="mm_title">ANI-BLOG</div>
+        <div class="blog_container"></div>
+        <div id="blog_input" class="hide blog_container">
+            <div class="blog_form">
+                <input type="text" class="input_title" placeholder="Title" />
+                <input type="url" class="input_url" placeholder="Image URL" />
+                <div class="drop-area">
+                    <textarea type="text" placeholder="Description, or you can also drop your image" class="text_description"></textarea>
+                    <<input type="file" class="hide" id="hidden_input" name="why" />
+                </div>
+                <button id="submit" type="button">Submit!</button>
+            </div>
+        </div>
+        <div class="preview hide"></div>
+        <button id="add"><i class="fa-solid fa-circle-plus"></i></button>
+    </body>
+</html>

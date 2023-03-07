@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kaze: Games and Anime</title>
+        <link rel="icon" type="image/png" href="./icon/favicon.png" />
+        <link rel="stylesheet" href="./style/mastermind.css" />
+        <link rel="stylesheet" href="./style/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="logo"><img id="logo" src="./src/logo.png" />Faze</a>
+            <div class="navbar_sections">
+                <a href="games.html"><span>Games</span></a>
+                <a href="anime.html"><span>Anime</span></a>
+                <a href="about.html"><span>About</span></a>
+                <a href="index.html" id="home"><span>Home</span></a>
+            </div>
+        </div>
+        <div class="mm_title">MASTERMIND</div>
+        <div class="form">
+            <form id="myform">
+                <div class="pop_window" id="pop_window">
+                    <h1>Choose your dificulty</h1>
+                    <div class="input_container">
+                        <label for="nums">#Numbers</label>
+                        <input name="numbers" id="nums" type="text" class="input" />
+                    </div>
+                    <div class="input_container">
+                        <label for="rounds">Rounds</label>
+                        <input name="round" id="rounds" type="text" class="input" />
+                    </div>
+                    <button type="submit" class="btn">Ok</button>
+                    <div class="error" id="errorSection"></div>
+                </div>
+            </form>
+        </div>
+        <div class="game_container hide" id="game_container">
+            <div class="screen"></div>
+            <button type="submit" class="reset" id="reset">Reset</button>
+            <form action="games.html" style="display: inline">
+                <button type="submit" class="restard">Restart</button>
+            </form>
+            <div class="rounds_played">
+                <div style="text-align: center; width: 100%; height: 50%">Round</div>
+                <div id="round_num" style="text-align: center"></div>
+            </div>
+        </div>
+        <div class="pop_result hide"></div>
+        <div class="log_container hide"></div>
+        <script src="js/mastermind.js"></script>
+    </body>
+</html>
